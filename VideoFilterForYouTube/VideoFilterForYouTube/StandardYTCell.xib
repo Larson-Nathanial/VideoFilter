@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="itR-Tf-Wfz" customClass="StandardYTCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="itR-Tf-Wfz" id="Pe5-94-3aa">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSb-2K-ced">
+                        <rect key="frame" x="158" y="10" width="154" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="59" id="Ld9-o2-CSA"/>
+                            <constraint firstAttribute="width" constant="154" id="fSx-zS-HE8"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Enough text so that it can go on two lines really nicely">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="AvenirNext-Medium"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dW-XD-Kdt">
+                        <rect key="frame" x="158" y="73" width="154" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="0oE-mR-w0d"/>
+                            <constraint firstAttribute="width" constant="154" id="Nd6-J0-0uO"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="The Piano Guys">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="AvenirNext-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cVT-Uq-TWI">
+                        <rect key="frame" x="8" y="10" width="142" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="6kC-zc-b4G"/>
+                            <constraint firstAttribute="width" constant="142" id="wGH-0l-xcm"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gSb-2K-ced" firstAttribute="top" secondItem="Pe5-94-3aa" secondAttribute="topMargin" constant="2" id="0Rn-Pb-WAD"/>
+                    <constraint firstItem="cVT-Uq-TWI" firstAttribute="leading" secondItem="Pe5-94-3aa" secondAttribute="leadingMargin" id="KMH-W7-VYv"/>
+                    <constraint firstItem="7dW-XD-Kdt" firstAttribute="top" secondItem="gSb-2K-ced" secondAttribute="bottom" constant="4" id="ST9-G9-iLh"/>
+                    <constraint firstItem="cVT-Uq-TWI" firstAttribute="top" secondItem="Pe5-94-3aa" secondAttribute="topMargin" constant="2" id="V9g-rF-9X7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cVT-Uq-TWI" secondAttribute="bottom" constant="2" id="chx-bD-JCR"/>
+                    <constraint firstItem="gSb-2K-ced" firstAttribute="leading" secondItem="cVT-Uq-TWI" secondAttribute="trailing" constant="8" id="ql7-hK-IYB"/>
+                    <constraint firstItem="7dW-XD-Kdt" firstAttribute="leading" secondItem="cVT-Uq-TWI" secondAttribute="trailing" constant="8" id="r2V-Yp-67M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="artImageView" destination="cVT-Uq-TWI" id="ccq-tI-2uJ"/>
+                <outlet property="channelTitle" destination="7dW-XD-Kdt" id="47d-N4-uwX"/>
+                <outlet property="videoTitleLabel" destination="gSb-2K-ced" id="XY7-4Z-khd"/>
+            </connections>
+            <point key="canvasLocation" x="308" y="316"/>
+        </tableViewCell>
+    </objects>
+</document>
