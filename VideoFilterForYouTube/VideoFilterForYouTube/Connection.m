@@ -34,8 +34,8 @@
 - (instancetype)initPrivate
 {
     self = [super init];
-    _verification = @"iefMksUIuchfu2834y823e9hskdfj283r9jhs3dlOIjrhqSDFA4faufDFAfhosdfho48Fdh2j3kfDAGueiwlF32kdjf2";
-    _googleAPIKEY = @"AIzaSyASX7gExs0_zaF4URRtxT4a_zzA1kC3PPM";
+    _verification = @"KEY";
+    _googleAPIKEY = @"KEY";
     return self;
 }
 
